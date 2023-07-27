@@ -48,6 +48,8 @@ export const typeDefs = `#graphql
   }
 `
 
+// npx nodemon app.js 
+
 export const resolvers = {
     // Resolvers for Queries
     Query: {
