@@ -21,6 +21,20 @@ const db = {
           age: 2,
           breed: 'tabby',
       },
+  ],
+  nicknames: [
+    {
+        pet_id: 1,
+        name: 'abc',
+    },
+    {
+        pet_id: 2,
+        name: 'def',
+    },
+    {
+        pet_id: 3,
+        name: 'ghi',
+    },
   ]
 }
 

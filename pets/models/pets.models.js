@@ -12,7 +12,13 @@ export const getItem = id => {
 
 export const listItems = () => {
     try {
-        return db?.pets
+        return db?.pets.map((pet) => {
+            const nickname = db.nicknames.find((nickname) => nickname.pet_id === pet.id);
+            return {
+                ...pet,
+                nickname
+            }
+        })
     } catch (err) {
         console.error('Error', err)
         return err

@@ -12,6 +12,12 @@ export const typeDefs = `#graphql
     type: String!
     age: Int!
     breed: String!
+    nickname: Nickname!
+  }
+
+  type Nickname {
+    name: String!
+    pet: Pet!
   }
 
   # INPUT TYPES
